@@ -1,0 +1,24 @@
+1.PW			sizeof(TCHAR) * MIN_STR
+2.CharacterNum	sizeof(int)
+3.Select		sizeof(int)
+
+for(0->CharacterNum)
+4.MapKey		sizeof(TCHAR) * MIN_STR
+5.Pos			sizeof(D3DXVECTOR3)
+6.Angle			sizeof(D3DXVECTOR3)
+7.Size			sizeof(D3DXVECTOR3)
+8.SlotType		sizeof(SLOT_TYPE) * 7
+8.Info			sizeof(Info)
+9.Stat			sizeof(Stat)
+10.ItemNum		sizeof(int)
+
+for(0->ItemNum)
+11.Item			sizeof(Item)
+
+12. EquipNum	sizeof(int)
+
+for(0->EquipNum)
+{
+	EquipIndex,
+	Item
+}

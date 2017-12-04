@@ -1,0 +1,15 @@
+±âº» UI
+RenderCom = 0x0000000f;
+UpdateCom = 0xfffffff0;
+
+Cursor UI
+RenderCom = 0x0000000a;
+UpdateCom = 0xfffffff5;
+
+Message UI
+RenderCom = 0x00000005;
+UpdateCom = 0xfffffffa;
+
+Message UIÀÇ UI
+RenderCom = 0x00000004;
+UpdateCom = 0xfffffffb;

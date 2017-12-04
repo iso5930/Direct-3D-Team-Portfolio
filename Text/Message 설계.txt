@@ -1,0 +1,14 @@
+버튼이 1개 또는 0개를 가진다. 이 버튼은 닫기 버튼임.
+
+pUpdateCom->m_dwPriority = 0xFFFFFFF5;
+pRenderCom->m_dwPriority = 0x0000000A;
+
+레벨에서 동작한다.
+
+또한, 무조건 InputMgr의 모든 값들을 무효화시킨다.
+
+MessageUI가 가지고 있는 모든 UI는
+pUpdateCom->m_dwPriority = 0xFFFFFFFB;
+pRenderCom->m_dwPriority = 0x00000004;
+
+레벨에서 동작한다.

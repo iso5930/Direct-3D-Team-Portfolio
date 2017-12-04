@@ -1,0 +1,42 @@
+<트리스트럼 ~ 구트리스트럼>
+되살아난 자 : Zombie_Skinny_Male_White
+뒤틀린 어미 : Zombie Female
+걸어다니는 시체 : Zombie Male
+
+<대성당>
+해골 : Skeleton_OneHand_Mint
+해골 방패잡이 : Skeleton_Shield_Brown
+해골 궁수 : Skeleton_Archer_Mint
+기괴살덩이 : Stitch
+무덤 수호자 : Skeleton_Summoner_Brown
+
+<레오릭의 저택 내부>
+충직한 뼛조각 전사 : Skeleton_OneHand_Brown
+충직한 해골 사격수 : Skeleton_Archer_Red
+충직한 해골 파수병 : Skeleton_Shield_Red
+충직한 왕실 마법사 : Skeleton_Summoner_Red
+충직한 등뼈 전달자 : Skeleton_Axe_Red
+어둠의 광신도 : Triune_Cultists
+
+<레오릭 보스방>
+되돌아온 자 : Skeleton_OneHand_Blue
+되돌아온 궁수 : Skeleton_Arhcer_Brown
+잊힌 병사 : Skeleton_Shield_Mint
+
+<비명의 전당>
+어둠의 육신 : Triune_Vessel
+부정한 노예 : Triune_Possessed
+어둠의 광전사 : Triune_Berserker
+어둠의 광신도 : Triune_Cultists
+지옥불 좀비 : Zombie_Male_Red
+
+<저주받은 요새>
+수감된 밀렵꾼 : Skeleton_Archer_Brown
+수감된 탈영병 : Skeleton_OneHand_
+사나운 마귀 : Ghoul
+교도관 : Warden
+고문당한 소환사 : Skeleton_Summoner_Blue
+되돌아온 집행자 : Skeleton_Axe_Blue
+
+<비명의 전당 끝>
+도살자 : Butcher

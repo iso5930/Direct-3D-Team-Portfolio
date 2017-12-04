@@ -1,0 +1,19 @@
+#pragma once
+#include "effect.h"
+
+class CDemonHunter_SpikeTrap_DecalEffect : public CEffect
+{
+private:
+	float	m_fTime;
+	int		m_iPrevHate;
+
+public:
+	virtual void Initialize();
+	virtual int Update();
+	virtual void Render();
+	virtual void Release();
+
+public:
+	explicit CDemonHunter_SpikeTrap_DecalEffect(TCHAR* _tszObjKey, OBJ_TYPE _eObjType, CObject* _pOwner);
+	virtual ~CDemonHunter_SpikeTrap_DecalEffect(void);
+};

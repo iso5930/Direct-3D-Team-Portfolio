@@ -1,0 +1,63 @@
+#include "StdAfx.h"
+#include "Ghoul_Scratch_A.h"
+
+CGhoul_Scratch_A::CGhoul_Scratch_A(TCHAR* _tszObjKey, OBJ_TYPE _eObjType, CObject* _pOwner, D3DXVECTOR3* _pPos)
+: CEffect(_tszObjKey, _eObjType, _pOwner)
+{
+	// Pos
+	m_pTransformCom->m_vPos = *_pPos;
+
+	// Time
+	m_fTime = 0.0f;
+
+	// Size
+	m_pTransformCom->m_vSize = D3DXVECTOR3(0.8f, 0.8f, 0.8f);
+
+	// BufferCom
+	CBufferCom* pBufferCom = new CBufferCom;
+	pBufferCom->AddBuffer(_T("Ghoul_Scratch_A"));
+	AddComponent(pBufferCom);
+
+	// UpdateCom
+	CUpdateCom* pUpdateCom = new CUpdateCom(UPDATE_TYPE_EFFECT);
+	AddComponent(pUpdateCom);
+
+	// RenderCom
+	CRenderCom* pRenderCom = new CRenderCom(RENDER_TYPE_EFFECT);
+	pRenderCom->m_dwPass = 19;
+	AddComponent(pRenderCom);
+}
+
+CGhoul_Scratch_A::~CGhoul_Scratch_A(void)
+{
+	Release();
+}
+
+void CGhoul_Scratch_A::Initialize()
+{
+	CEffect::Initialize();
+}
+
+int CGhoul_Scratch_A::Update()
+{
+	CEffect::Update();
+
+	m_fTime += CTimeMgr::GetInstance()->GetDeltaTime();
+
+	m_fAlpha += 1.f * CTimeMgr::GetInstance()->GetDeltaTime();
+
+	if(m_fAlpha >= 1.f)
+		Destroy();
+
+	return 0;
+}
+
+void CGhoul_Scratch_A::Render()
+{
+	CEffect::Render();
+}
+
+void CGhoul_Scratch_A::Release()
+{
+
+}
